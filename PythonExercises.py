@@ -57,5 +57,55 @@ for month, day in birthdays:
 
 
 
+  
+# Exercise 2
+
+secret_word = input("Enter the secret word: ")
+
+while len(secret_word) <= 6:
+  print("Please enter a word with at least 6 characters")
+  secret_word = input("Enter the secret word: ")
+
+letter = input("Guess a letter: ")
+
+num_guesses = 1
+
+while letter in secret_word:
+  letter = input("Guess another letter: ")
+  num_guesses += 1
+
+print(f"The secret word is: {secret_word}. You took {num_guesses} guesses!")
+
+
 
   
+# Exercise 3
+
+uin = int(input("Enter a UIN: "))
+
+for student in roster:
+  if student[0] == uin:
+    # to access items in a list of a list use brackets and indexing like an array
+    # make sure you're paying attention to the list layers
+    print(f"{student[1][0]} {student[1][1]}: {student[1][2]}, {student[1][3]}")
+
+
+
+
+# Exercise 4
+
+letters = ["a", "b", "c", "d", "e"]
+
+for i in range(5):
+  print(letters[i] * (i+1)) 
+
+
+
+
+# Exercise 5
+
+
+
+
+
+
